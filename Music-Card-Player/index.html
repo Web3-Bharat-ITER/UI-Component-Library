@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music-Card-Player</title>
+	<link href='https://fonts.googleapis.com/css?family=Sora' rel='stylesheet'>
+	<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<div class="main">
+		<div class="app">
+			<div class="top-bar">
+				<button class="button"><iconify-icon icon="material-symbols:arrow-back-rounded"></iconify-icon></button>
+				<h4>PLAYING NOW</h4>
+				<button class="button"><iconify-icon icon="heroicons:bars-3-solid"></iconify-icon></button>
+			</div>
+			<div class="music-bar">
+				<div class="music-picture">
+					<img src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" id="music_jpg">
+				</div>
+			</div>
+			<div class="label">
+				<div class="artist">
+					<h3 id="team">Lofi-Beats</h3>
+					<h5 id="artist_name">Team Lofi</h5>
+				</div>
+			</div>
+			<div class="track">
+				<input type="range" id="seekbar" min="0" max="100" value="">
+				<audio id="aud" src=""></audio>
+			</div>
+			<div class="controls">
+				<div class="heart">
+					<button class="button"><iconify-icon icon="heroicons:heart-solid"></iconify-icon></button>
+				</div>
+				<div class="prev">
+					<button class="button" id="prev"><iconify-icon icon="ci:skip-previous"></iconify-icon></button>
+				</div>
+				<div class="play">
+					<button class="button" id="play"><iconify-icon icon="ci:play-arrow"></iconify-icon></button>
+					<button class="button hidden" id="pause"><iconify-icon icon="akar-icons:pause"></iconify-icon></button>
+				</div>
+				<div class="next">
+					<button class="button" id="next"><iconify-icon icon="ci:skip-next"></iconify-icon></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
