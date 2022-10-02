@@ -1,0 +1,21 @@
+
+.accordion{
+    color: blueviolet;
+    padding: 2%;
+}
+h1{
+    margin-left: 27%;
+    padding: 3%;
+    color: deeppink;
+}
+.mb-0{
+    padding: 2%;
+    background-color: darkmagenta;
+}
+.collapse{
+     color: greenyellow;
+     background-color: blue;
+}
+.yun{
+    color: yellow;
+}
