@@ -1,21 +1,30 @@
-
+*{
+    background-color: gainsboro;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    padding: 5%;
+}
 .accordion{
-    color: blueviolet;
     padding: 2%;
+    border-radius: 3%;
 }
 h1{
-    margin-left: 27%;
+    
     padding: 3%;
     color: deeppink;
+    text-align: center;
+    font-family: cursive;
 }
 .mb-0{
     padding: 2%;
-    background-color: darkmagenta;
+    
 }
 .collapse{
-     color: greenyellow;
-     background-color: blue;
+     color: black;
+     
 }
 .yun{
-    color: yellow;
+    color: black;
 }
