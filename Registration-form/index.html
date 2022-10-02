@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/Registration-form/style.css">
+    
+</head>
+
+<body>
+    
+    <div class="container">
+      
+        <form >
+            <h1>Register with us!!</h1>
+            <div class="name fm">
+                <label>NAME</label>
+                <input type="text" placeholder="name" id="name" required>
+            </div>
+            <div class="email fm">
+                <label>email</label>
+                <input type="email" placeholder="enter your email" required>
+            </div>
+            <div class="phone fm">
+                <label for="phone">phone number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}"
+                    placeholder="telephone number" required>
+            </div>
+            <div class="gender fm">
+                <p>gender</p>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">FEMALE</label>
+                <input type="radio" id="MALE" value="MALE" name="gender">
+                <label for="MALE">MALE</label>
+                <input type="radio" id="OTHERS" value="OTHERS" name="gender">
+                <label for="OTHERS">OTHERS</label>
+            </div>
+            <div class="address fm">
+                <p>enter your address</p>
+                <textarea name="" id="" cols="30" rows="2" placeholder="enter your address"></textarea>
+            </div>
+            <div class="pincode fm">
+                <p>pincode</p>
+                <input type="pincode" name="pin" pattern="[0-9]{6}" maxlength="6" placeholder="pincode" required>
+            </div>
+            <div class="password fm">
+                <label>password</label>
+                <input type="password" placeholder="enter password" id="password" required>
+            </div>
+            <div class="confirm-password fm">
+                <label>confirm password</label>
+                <input type="password" placeholder="re-enter passsword" id="reenter" required>
+            </div>
+            <div class="agree fm">
+                <input type="checkbox" id="#i-agree" required>
+                <p>i agree to all tems and conditions</p>
+                <input type="submit" value="send"
+                name="submit">
+            </div>
+
+
+        </form>
+    </div>
+    
+</body>
+
+</html>
