@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    font-family: cursive;
+    align-items: center;
+    justify-content:center;
+    
+}
+.container{
+     display: flex;
+     width: 100%;
+     
+     background-image: url(/Registration-form/istockphoto.jpg);
+     padding: 20px;
+     border-radius: 30px;
+     background-size: cover;
+}
+form{ 
+        max-width: 50%;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        max-height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); 
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-left: 15%;
+        border: 3px white solid;
+}
+form h1{
+    color: rgb(233, 14, 149);
+    margin: 0;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+form .fm{
+    margin: 0;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+form label ,p{
+    color: white;
+    text-transform: uppercase;
+     margin: 10px;
+}
+ form .gender{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+ }
+input,textarea{
+    padding: 5px;
+    border-radius:8px;
+}
+
+form input[type=submit]{
+    padding: 10px;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    font-size: 15px ;
+    border-radius: 10px;
+    border: 2px white solid;
+   
+}
+form input[type=submit]:hover{
+    transform: scale(1.05);
+      
+}
+form  .agree{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-around;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+    
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+  }
