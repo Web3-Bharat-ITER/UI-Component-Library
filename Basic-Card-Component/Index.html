@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="h-screen bg-slate-800 flex justify-center items-center">
+      <div class="relative w-full max-w-lg">
+        <div
+          class="absolute top-0 -left-4 w-72 h-72 bg-purple-600 rounded-full filter blur-xl opacity-70"
+        ></div>
+        <div
+          class="absolute top-0 -right-4 w-72 h-72 bg-blue-300 rounded-full filter blur-xl opacity-70"
+        ></div>
+        <div
+          class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full filter blur-xl opacity-70"
+        ></div>
+      </div>
+
+      <div class="flex items-center justify-between mr-10 absolute">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+          <div
+            class="px-6 py-4 h-64 w-64 bg-clip-padding backdrop-filter bg-slate-600 backdrop-blur-l bg-opacity-60 border-0"
+          >
+            <div class="font-bold text-l mb-2 text-white">
+              Basic Card Component
+            </div>
+            <p class="text-white text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
