@@ -8,5 +8,3 @@ This repo is all about the Reuseable UI-Components. You can find and contribute 
 - You can always use the discussion tab to open a discussion, if you need any help and answers.
 - If you are contributing you project, kindly make a separate directory/folder for it.
 - Yes, we are accepting pull requests for hacktober fest 2022, so a valid pull request will give you a +1 in you PR making goals.
-
-## Thank You
