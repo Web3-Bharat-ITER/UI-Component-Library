@@ -1,0 +1,45 @@
+
+.container {
+  width: 318px;
+  height: 400px;
+  background-color: #EFF0F3;
+  border-radius: 16px;
+  padding: 10px 16px 33px;
+  margin: auto;
+}
+
+.news-img img {
+  width: 318px;
+  height: 168px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.content .news-header {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #081f32;
+  line-height: 33px;
+}
+
+.content .description {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #374a59;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #007ae9;
+}
