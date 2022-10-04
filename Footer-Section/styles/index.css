@@ -12,7 +12,9 @@ main{
 footer{
     background: black;
     color: white;
-    padding: 2rem;
+    padding: 3rem 5rem 2rem 5rem;
+    margin-top: 3rem;
+    border-radius: 5rem 0rem 0rem 0rem;
 }
 .footer__link__list{
     list-style: none;
@@ -40,7 +42,7 @@ footer{
     flex-wrap: wrap;
 }
 
-.footer__links__section{
+.footer__links__section:not(:last-child){
     margin: 0rem 5rem 0rem 0rem;
     
 }
