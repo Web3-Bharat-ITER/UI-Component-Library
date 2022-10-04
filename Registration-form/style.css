@@ -20,7 +20,7 @@ body{
      background-size: cover;
 }
 form{ 
-        max-width: 50%;
+        max-width: 500px;
         display: block;
         flex-direction: column;
         align-items: center;
@@ -30,7 +30,7 @@ form{
         padding: 10px;
         border-radius: 20px;
         font-size: 12px;
-        margin-left: 15%;
+       margin: 0 auto;
         border: 3px white solid;
 }
 form h1{
