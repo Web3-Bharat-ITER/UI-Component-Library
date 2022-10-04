@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Component</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            background-color: rgba(209, 213, 219, 0.479);
+        }
+
+        .container {
+            max-width: 640px;
+            overflow: hidden;
+            position: relative;
+            padding: 16px 20px;
+            width: 100%;
+            margin: 0 20px;
+
+        }
+
+        .tabs {
+            display: flex;
+            flex-direction: row;
+            margin: 30px 0px;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .btn {
+            padding: 0.50rem 1rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            background-color: white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.001);
+        }
+
+        .btn.active {
+            background-color: rgba(37, 100, 235, 0.98);
+
+            color: white;
+        }
+
+        .section {
+            max-width: 640px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .content.active {
+            padding: 2rem;
+            display: block;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            opacity: 0.8;
+            margin: 4px 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            letter-spacing: 0.2px;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+
+        .content {
+            display: none;
+        }
+
+        @media screen and (max-width: 640px) {
+            .container {
+                max-width: 420px;
+                margin: 0 10px;
+            }
+
+            .tabs {
+                gap: 14px;
+            }
+
+            .btn {
+                font-size: 1.2rem;
+            }
+
+            .section {
+                max-width: 420px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="btn btn1 active" id="1">Home</button>
+            <button class="btn btn2" id="2">About</button>
+            <button class="btn btn3" id="3">Pricing</button>
+            <button class="btn btn3" id="4">Help</button>
+
+        </div>
+        <div class="section">
+            <div class="content content1 active">
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A
+                    small river named
+                    Duden flows by their place and supplies it with the necessary.</p>
+            </div>
+            <div class="content content2">
+                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
+                    which I enjoy with my
+                    whole heart. I am alone, and feel the charm of existence in this spot, which was created for the
+                    bliss of souls like
+                    mine.
+                </p>
+            </div>
+            <div class="content content3">
+                <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced
+                    by fox whelps.
+                    Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab
+                    quick-jived waltz. Brick quiz
+                    whangs jumpy veldt fox.</p>
+            </div>
+            <div class="content content4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis odit veritatis exercitationem
+                    molestiae quos qui! Similique ad eius a. Nihil, necessitatibus vitae.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll("button");
+        const sections = document.querySelectorAll(".content");
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                buttons.forEach((btn) => {
+                    btn.classList.remove("active");
+                });
+                btn.classList.add("active");
+                const id = btn.id;
+                sections.forEach((section) => {
+                    section.classList.remove("active");
+                });
+                const req = document.getElementsByClassName(`content${id}`);
+                req[0].classList.add("active");
+            })
+        })
+    </script>
+</body>
+
+</html>
