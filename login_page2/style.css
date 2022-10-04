@@ -5,13 +5,11 @@
 
 body {
     font-family: 'IBM Plex Mono', monospace;
-
-    background-color: rgb(250 174 43);
 }
 
 
 button {
-    background-color: #e2e8f0;
+    background-color: #E1FFEE;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     box-shadow: 10px 10px rgb(2, 2, 2);
     border-radius: 5px;
@@ -19,21 +17,22 @@ button {
 }
 
 button:hover {
-    background-color: #c1c8d3;
+    background-color: #A5F1E9;
 }
 
 .card {
     margin: 120px auto;
-    background-color: #11C5C6;
+    background-color: #FFEEAF;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    border: 1px solid #000000;
     box-shadow: 10px 10px rgb(2, 2, 2);
     border-radius: 5px;
 }
 
 input[type=text] {
-    border: 2px solid #000000;
+    border: 1px solid #000000;
 }
 
 input[type=password] {
-    border: 2px solid #000000;
+    border: 1px solid #000000;
 }
