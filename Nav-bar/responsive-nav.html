@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nav-style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Navigation Bar</title>
+</head>
+<body>
+<div class="sidebar close">
+    <nav>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-home' >
+                        <span class="link_name">Home</span>
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message-rounded'>
+                        <span class="link_name">About</span>
+                    </i>
+                </a>
+            </li>
+            <li>
+                <div class="icon-link">
+                <a href="#">
+                    <i class='bx bx-grid-alt' >
+                        <span class="link_name">Services</span>
+                    </i>
+                </a>
+                <i class='bx bx-chevron-down  arrow'></i>
+            </div>
+            <ul class="sub-menu blank">
+                <li><a class="link_name" href="">Value 1</a></li>
+                <li><a href="">Value 2</a></li>
+                <li><a href="">Value 3</a></li>
+                <li><a href="">Value 4</a></li>
+            </ul>
+            </li>
+            <li>
+                <a href="#">
+                <i class='bx bx-happy-alt'>
+                        <span class="link_name">Contact</span>
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script>
+    let arrow = document.querySelectorAll(".arrow");
+    for(var i=0; i<arrow.length; i++){
+        arrow[i].addEventListener("click", (e)=>{
+            let arrowParent= e.target.parentElement.parentElemrnt;
+            console.log(arrowParent);
+            arrowParent.classlist.toggle("showMenu");
+        });
+    }
+    
+</script>
+
+</body>
+</html>
