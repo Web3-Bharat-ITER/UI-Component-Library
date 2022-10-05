@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background: rgb(23, 24, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background: green;
+    box-shadow: -3px -3px 8px -1px rgba(255, 255, 255, 0.63);
+
+}
+
+.circle::before{
+    content: "";
+    position: absolute;
+    height: 195px;
+    width: 195px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#value{
+    position: relative;
+    font-size: 37px;
+    font-weight: 600;
+    color: gray;
+}
