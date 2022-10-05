@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet');
 
+:root {
+    --primary-color: blue;
+    --secondary-color: #f2f2f2; 
+    --shadow-color: rgba(0, 0, 0, 0.395);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -36,8 +42,8 @@ header {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #f2f2f2;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.395);
+    background-color: var(--secondary-color);
+    box-shadow: 0 10px 20px var(--shadow-color);
     border-radius: 1em;
     overflow: hidden;
 }
@@ -80,17 +86,17 @@ form input {
     background-color: transparent;
 }
 form input:focus {
-    border-bottom-color: blue;
+    border-bottom-color: var(--primary-color);
 }
 
 form a {
     text-decoration: none;
-    color: blue;
+    color: var(--primary-color);
     font-size: 14px;
     text-align: right;
 }
 form a:hover {
-    text-decoration: underline 1px blue;
+    text-decoration: underline 1px var(--primary-color);
 }
 
 form button {
@@ -113,7 +119,7 @@ form button {
     }
 }
 form button:hover {
-    background-color: blue;
+    background-color: var(--primary-color);
 }
 form button:active {
     transform: scale(.9);
