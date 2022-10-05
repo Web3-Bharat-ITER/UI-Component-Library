@@ -1,0 +1,134 @@
+.navigation {
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  background: #fbfbfb;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.navigation .logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  margin-left: 5px;
+  line-height: 34px;
+  cursor: pointer;
+}
+.navigation .logo:hover {
+  color: #87ceeb;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.main-elements li {
+  margin: 0 17px;
+  color: #74768f;
+}
+.main-elements li:hover {
+  color: #0a157a;
+  cursor: pointer;
+}
+.auth-elements {
+  display: flex;
+  margin: 0 2px;
+}
+
+.auth-elements button.signin {
+  background: #0a157a;
+  border-radius: 8px;
+  padding: 8px;
+  color: #ffff;
+  margin: 0 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.auth-elements button.signup {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  color: #0a157a;
+  margin: 0 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.auth-elements button.signin:hover {
+  background: #fff;
+  color: #0a157a;
+}
+.auth-elements button.signup:hover {
+  background: #0a157a;
+  color: #ffff;
+}
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  right: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  right: 7px;
+  align-self: center;
+  top: 59px;
+  z-index: 1;
+  background: #fff;
+  border-radius: 1px;
+}
+.dropdown ul {
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.dropdown li {
+  margin-right: 20px;
+}
+
+.arrow-up {
+  position: absolute;
+  right: 7px;
+  top: 53px;
+  z-index: 2;
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #2f2f2f;
+}
+
+.none {
+  display: none !important;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-elements {
+    display: none;
+  }
+  .auth-elements {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="paddingSize">
+    <div class="bg-gradient"></div>
+    <header>
+        <div class="img">
+            <img src="shifaaz-shamoon-9K9ipjhDdks-unsplash.jpg" alt="">
+        </div>
+        <div class="login">
+            <h1>Login</h1>
+            <form action="">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forgot your password?</a>
+                <button>Log in</button>
+            </form>
+        </div>
+    </header>
+
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.js"></script>
+    <script>
+        const tl = gsap.timeline();
+        tl.from('.login h1', {
+            x: -100,
+            opacity: 0,
+            duration: 1
+        })
+        .from('.login input, .login a', {
+            x: -100,
+            opacity: 0,
+            stagger: .2,
+            duration: 1
+        }, '-=.5')
+    </script>
+</body>
+</html>
