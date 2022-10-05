@@ -1,0 +1,93 @@
+.main{
+    max-height: 50vh;
+}
+
+.mainContent {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.punkHighlight{
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.punkContainer{
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-right: 20px;
+}
+.selectedPunk{
+    object-fit: contain;
+    max-width: min(30vw, 40vh);
+    max-height: 30vw;
+}
+.punkDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0.75;
+}
+.title{
+    font-size: 96px;
+    font-weight:800;
+}
+.itemNumber{
+    color: #a1a5b0;
+    font-size: 92px;
+    align-self: left;
+}
+.owner{
+    display: flex;
+    margin: 10px 0;
+    height: 100px;
+}
+.owner > div {
+    margin: 0 5px;
+}
+.ownerImageContainer{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: contain;
+
+}
+.ownerImageContainer > img{
+    height: 100%;
+    width: 100%;
+}
+
+.ownerDetails{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.ownernameAndHandle{
+    flex: 1;
+    color: #a1a5b0;
+
+}
+.ownerHandle{
+    padding: 12px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    font-size: 42px;
+    margin: 0 0 0 10px;
+}
+
+.ownerLink > img {
+    height: 100%;
+    width: 70%;
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+}
+.code{
+    color: #fff;
+}
