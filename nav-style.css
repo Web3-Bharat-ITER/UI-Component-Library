@@ -1,108 +1,110 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   }
-   body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   }
-   a {
-    text-decoration: none;
-   }
-   li {
+    font-family: 'Noto Sans Mono', monospace;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background: #1d1b31;
+}
+.sidebar .nav-links{
+    height: 100%;
+    padding-top: 30px;
+}
+.sidebar .nav-links li{
+    position: relative;
     list-style: none;
-   }
-   /* NAVBAR MENU */
-   .navbar {
+    transition: all 0.4s ease;
+}
+.sidebar .nav-links li:hover{
+    background-color: #1d1b31;
+}
+.sidebar .nav-links li .icon-link{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgb(19, 4, 104);
-    color: #fff;
-   }
-   .nav-links a {
-    color: #fff;
-   }
-   .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-   }
-   .menu li:hover {
-    background-color: rgb(28, 6, 150);
-    border-radius: 5px;
-    transition: 0.3s ease;
-   }
-   .menu li {
-    padding: 5px 14px;
-   }
-   /* DROPDOWN MENU */
-   .services {
-    position: relative; 
-   }
-   .dropdown {
-    background-color: rgb(19, 4, 104);
-    padding: 1em 0;
-    position: absolute; 
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-   }
-   .dropdown li + li {
-    margin-top: 10px;
-   }
-   .dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
+    justify-content: space-between;
+}
+.sidebar .nav-links li i{
+    height: 50px;
+    min-width: 78px;
     text-align: center;
-   }
-   .dropdown li:hover {
-    background-color: rgb(28, 6, 150);
-   }
-   .services:hover .dropdown {
-    display: block;
-   }
-   
-   input[type=checkbox]{
-    display: none;
-   } 
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+}
 
-   .hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-   }
-   /* APPLYING MEDIA QUERIES */
-   @media (max-width: 768px) {
-   .menu { 
-    display:none;
+.sidebar .nav-links li i a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+.sidebar .nav-links li i a .link_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.sidebar .nav-links li .sub-menu{
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: #1d1b31;
+    /* display: none; */
+}
+.sidebar .nav-links li.showMenu .sub-menu{
+    display: block;
+}
+.sidebar .nav-links li .sub-menu a{
+    color: white;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3 ease;
+}
+.sidebar .nav-links li .sub-menu a:hover{
+    opacity: 1;
+}
+.sidebar.close .nav-links li .sub-menu{
     position: absolute;
-    background-color:rgb(19, 4, 104);
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-   }
-   .menu li:hover {
-    display: inline-block;
-    background-color:rgb(28, 6, 150);
-    transition: 0.3s ease;
-   }
-   .menu li + li {
-    margin-top: 12px;
-   }
-   input[type=checkbox]:checked ~ .menu{
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    transition: all 0.4s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar.close .nav-links li:hover .sub-menu{
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+}
+.sidebar .nav-links li .sub-menu .link_name{
+    display: none;
+}
+.sidebar.close .nav-links li .sub-menu .link_name{
+    font-size: 18px;
+    opacity: 1;
     display: block;
-   }
-   .hamburger {
-    display: block;
-   }
-   .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-   }
-   .dropdown li:hover {
-    background-color: rgb(28, 6, 150);
-   }
+}
+.sidebar.close .nav-links li .sub-menu .blank{
+    opacity: 1;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+}
+.sidebar.close .nav-links li:hover .sub-menu .blank{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
