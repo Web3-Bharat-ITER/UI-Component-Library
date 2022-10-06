@@ -1,0 +1,46 @@
+body{
+  background-color: rgb(43, 75, 84);
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+.h1{
+ color:#fff;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 50, 56);
+  width: 15rem;
+  
+}
+.border-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 50, 56);
+  width: 15rem;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+   
+      
+  
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+
+
+
+
+      
+
+
