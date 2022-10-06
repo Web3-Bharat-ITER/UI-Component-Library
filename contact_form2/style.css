@@ -20,9 +20,15 @@ button:hover {
     background-color: #A5F1E9;
 }
 
-.card {
-    margin: 120px auto;
+.card-input {
     background-color: #FFEEAF;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    border: 1px solid #000000;
+    box-shadow: 10px 10px rgb(2, 2, 2);
+    border-radius: 5px;
+}
+
+.card-plain {
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
     border: 1px solid #000000;
     box-shadow: 10px 10px rgb(2, 2, 2);
@@ -37,4 +43,10 @@ input[type=email] {
 
 input::placeholder {
     font-family: 'IBM Plex Mono', monospace;
+}
+
+@media only screen and (max-width: 900px) {
+    .message {
+        display: none;
+    }
 }
