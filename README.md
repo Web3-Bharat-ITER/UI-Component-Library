@@ -11,6 +11,7 @@ Happy Submissions :slightly_smiling_face:
 ## Contributing Guidelines
 - Check already open issues for contributing to this repository.
 - If you find something that you can contribute and there is no issue open for it, you can open a issue and we will assign it to you.
+- Star the Repository and fork it so that you are able to contribute to this repository.
 - Do not make spam pull requests by adding just boiler plate code or removing white spaces from the documentation.
 - You can always use the discussion tab to open a discussion, if you need any help and answers.
 - If you are contributing you project, kindly make a separate directory/folder for it.
