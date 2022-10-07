@@ -1,0 +1,50 @@
+html, body { height: 100%; }
+
+body {
+  background: #81bcd9;
+  animation: sky 5s ease 0.9s infinite;
+}
+
+.wrap{
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.in {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+svg #sun-g {
+  transform: translateX(200px);
+  animation: sun-g 5s ease 1s infinite;
+  /* color: #76c2e8; */
+  opacity: 80%;
+}
+
+svg #sun {
+  transform: translateX(-200px);
+  animation: sun 5s ease 1s infinite;
+  /* border-radius: 3em;
+  color: #020202; */
+}
+
+@keyframes sky {
+  0% { background:#81bcd9; }
+  45%,55% { background: #000000; }
+  100% { background: #76c2e8; }
+}
+
+@keyframes sun-g {
+  0% { transform: translateX(200px); }
+  45%,55% { transform: translateX(0px); }
+  100% { transform: translateX(-200px); }
+}
+
+@keyframes sun {
+  0% { transform: translateX(-200px); }
+  45%,55% { transform: translateX(0px); }
+  100% { transform: translateX(200px); }
+}
