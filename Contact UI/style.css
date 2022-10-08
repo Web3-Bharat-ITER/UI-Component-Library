@@ -15,8 +15,43 @@ body
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #131419;
+    background-color: #131419;
 }
+
+body.light{
+    background-color: #ffffff;
+}
+
+
+.toggle 
+{
+    width: 4.2rem;
+  height: 4.2rem;
+  background-color: #ddd;
+  position: absolute;
+  top: 2.2rem;
+  right: 26rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form.light .toggle
+{
+    color: #222222;
+}
+
+.toggle i
+ {
+    font-size: 3rem;
+    color: #222222;
+  }
+
+.form.light .toggle i
+{
+    color: #777;
+}  
 
 .form
 {
@@ -30,7 +65,17 @@ body
     backdrop-filter: blur(5px);
     box-shadow: -10px -10px 20px rgba(255,255,255,0.05),
                  10px 10px 20px rgba(0,0,0,0.5);
+} 
+
+.form.light
+{
+    background-color: #FAF9F6;
+    box-shadow: -20px -20px 30px rgba(255,255,255,0.01),
+                 10px 10px 20px rgba(0,0,0,0.4);
 }
+
+
+
 
 .form h2
 {
@@ -46,6 +91,11 @@ body
     
 }
 
+.form.light h2
+{
+    color: #000000;
+}
+
 .form.input
 {
    
@@ -53,6 +103,11 @@ body
     margin-top: 40px;
     
     
+}
+
+.form .input .inputBox input.light{
+    background: #FAF9F6;
+
 }
 
 .form.input.inputBox
@@ -76,17 +131,21 @@ body
     
 }
 
+.form.light .input .inputBox label
+{
+    color: #000000;
+}
+
 .form .input .inputBox input
 {
     width: 78%;
     height: 50px;
-
     background: #131419;
     border: 5px;
     outline: none;
     border-radius: 20px;
     padding: 5px 15px;
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
     padding-left: 20px;
     color: #03a9f4;
@@ -94,6 +153,16 @@ body
                  inset 4px 4px 8px rgba(0,0,0,0.8);
 
 }
+.form .input .inputBox input.light{
+    color: #0ABAB5;
+    font-size: 19px;
+    box-shadow: inset -6px -6px 10px rgba(255,255,255,0.01),
+                 inset 2px 3px 7px rgba(0,0,0,0.4);
+    
+}
+
+
+
 
 .form .input .inputBox input[type="submit"]
 {
