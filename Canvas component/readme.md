@@ -14,6 +14,7 @@ npm run dev
 # Build for production in the dist/ directory
 npm run build
 ```
+# Here is a ScreenShot of the CANVAS component
 <div align="center">
   <img src="https://user-images.githubusercontent.com/76916192/194703670-d973c89e-97e3-4111-b6a4-dd92e60352bd.png" />
 
