@@ -1,25 +1,13 @@
 
-# This is my attempt to create a UI-UX design 
+# Egypt Tourism UI
 
-This Project consists of a UI-UX design for a tourism and knowledge website for egypt. Being my first step to UI-UX design I require some help in the javascript of this website if you could please help me out. Cheers!
-## The Demo of working page
+Egypt Tourism UI Screenshots
 
-This is how the page looks like when in function
+## Navbar
+![Screenshot (1342)](https://user-images.githubusercontent.com/71783722/194718751-f9c26e75-fe26-40b2-bf96-789e2bea92ff.png)
 
-![Egypt-pyramids-Google-Chrome-202](https://user-images.githubusercontent.com/71783722/128968773-021dbadf-6e0c-4019-95dc-10ce2f94e9d4.gif)
-## FAQ
+## Main Page
+![Screenshot (1340)](https://user-images.githubusercontent.com/71783722/194718754-ae1384bd-feb1-4033-b664-f09a0eee505d.png)
 
-#### Languages Used
-
-Html, CSS 
-
-### What problems I am having with this ?
-
-I want this website to have that learnmore section not visible till the time it is not hover or targeted. That should be below the Land of Phorahs section.
-
-Sound is also one of the issues which I am facing. I wish to trigger an auto enable sound loop that would autoplay when the website is clicked.
-## Authors
-
-- [@Shivam Jha](https://github.com/shivam-jha2712)
-
-  
+## Secondary Content
+![Screenshot (1341)](https://user-images.githubusercontent.com/71783722/194718756-219b02c2-edd1-494c-87c8-6685cef0575b.png)
