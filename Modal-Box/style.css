@@ -1,0 +1,136 @@
+:root {
+    --red: #cb2828;
+    --green: #27ae60;
+    --blue: #2980b9;
+    --orange: #db9b25;
+    --redh: #dd3c3c;
+    --greenh: #2ecc71;
+    --blueh: #4094cf;
+    --orangeh: #faa407;
+}
+
+body {
+    padding: 1%;
+    font: 1/1.5em sans-serif;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 4rem 0;
+}
+
+.what {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+em {
+    font-size: x-small;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+}
+
+.modal-bg {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: opacity 0.25s ease;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.modal-state {
+    display: none;
+}
+
+.modal-state:checked+.modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-state:checked+.modal .modal-content {
+    top: 0;
+}
+
+.modal-content {
+    transition: top 0.2s ease;
+    position: absolute;
+    top: -50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    margin: auto;
+    overflow: auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1em 2em;
+    height: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        height: fit-content;
+        box-sizing: border-box;
+    }
+
+    .what {
+        max-width: 80%;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.5em 1em;
+    color: #fff;
+    border-radius: 3px;
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.btn-green {
+    background: var(--green);
+}
+
+.btn-green:hover {
+    background: var(--greenh);
+}
+
+.btn-red {
+    background: var(--red);
+}
+
+.btn-red:hover {
+    background: var(--redh);
+}
+
+.btn-blue {
+    background: var(--blue);
+}
+
+.btn-blue:hover {
+    background: var(--blueh);
+}
+
+.btn-orange {
+    background: var(--orange);
+}
+
+.btn-orange:hover {
+    background: var(--orangeh);
+}
