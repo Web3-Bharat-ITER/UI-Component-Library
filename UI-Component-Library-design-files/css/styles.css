@@ -105,7 +105,8 @@ h1{
 .each-project .button-box a{
     flex: 1;
 }
-.each-project .button-box button{
+
+.each-project .button-box button {
     width: 100%;
     background: #0288d1;
     color: white;
