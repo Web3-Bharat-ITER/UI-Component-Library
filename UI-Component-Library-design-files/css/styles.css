@@ -137,7 +137,7 @@ h1{
     padding: 1rem;
 }
 .contribution-box img{
-    max-width: 100%;
+    width: 100%;
 }
 footer{
     text-align: right;
