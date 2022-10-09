@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Component</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+     <div class="card">
+      <div class="content">
+        <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?cs=srgb&dl=pexels-pixabay-206359.jpg&fm=jpg" width="250px" height="150px"></img>
+        <h2>01</h2>
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe at nobis corporis! Rem, soluta? Quam sit praesentium iste aspernatur, deserunt labore amet reprehenderit dolore minima distinctio, quibusdam similique temporibus?</p>
+        <a href="#">Read More</a>
+      </div>
+     </div>
+        <div class="card">
+         <div class="content">
+            <img src="https://play-lh.googleusercontent.com/WIgZ_0ZAj2f9h6F4fyIykBJl7TFQJQ3P9jUh0MNFjMATD0dITLL-H9oTZOvhUf28Hw" width="250px" height="150px"></img>
+           <h2>02</h2>
+           <h3>Heading</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe at nobis corporis! Rem, soluta? Quam sit praesentium iste aspernatur, deserunt labore amet reprehenderit dolore minima distinctio, quibusdam similique temporibus?</p>
+           <a href="#">Read More</a>
+         </div>
+        </div>
+            <div class="card">
+             <div class="content">
+                <img src="https://t3.ftcdn.net/jpg/03/36/97/58/360_F_336975809_VvYkV1QZX2E8igeS3kYpcBGiMcK6zWpL.jpg" width="250px" height="150px"></img>
+               <h2>03</h2>
+               <h3>Heading</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe at nobis corporis! Rem, soluta? Quam sit praesentium iste aspernatur, deserunt labore amet reprehenderit dolore minima distinctio, quibusdam similique temporibus?</p>
+               <a href="#">Read More</a>
+             </div>
+            </div>
+    </div>
+
+    <script type="text/javascript" src="/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+     });
+    </script>
+</body>
+</html>
