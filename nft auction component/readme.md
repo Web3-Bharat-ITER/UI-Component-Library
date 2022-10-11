@@ -12,4 +12,5 @@
 
 # nft auction component
 
-![nft auction component](https://user-images.githubusercontent.com/63231765/195045186-7b6a2735-c5ad-45f6-8bdf-e7648fb43b47.png)
+![nft auction component](https://user-images.githubusercontent.com/63231765/195177881-c7dc971e-85d1-4227-86e4-0b97dd5af680.png)
+
