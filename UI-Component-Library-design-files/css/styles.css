@@ -80,7 +80,7 @@ h1{
 }
 .projects-box{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 1rem;
 }
 .each-project
@@ -149,15 +149,7 @@ footer a{
     font-weight: 600;
 }
 /* Media Query CSS  */
-@media only screen and (max-width:1300px) {
-    .projects-box{
-        grid-template-columns: repeat(3,1fr);
-    }
-}
 @media only screen and (max-width:1000px) {
-    .projects-box{
-        grid-template-columns: repeat(2,1fr);
-    }
     .heading-box {
         padding: 1rem;
         flex-direction: column;
@@ -184,9 +176,6 @@ footer a{
     }
 }
 @media only screen and (max-width:700px) {
-    .projects-box{
-        grid-template-columns: repeat(1,1fr);
-    }
     body,.main-area{
         padding: 0.7rem;
     }
