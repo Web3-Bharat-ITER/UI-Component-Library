@@ -9,6 +9,8 @@ The link to the working page is : https://quote-generator-api.netlify.app/
 This is the video for the working website: 
 ![28092021-224412-REC](https://user-images.githubusercontent.com/71783722/135887787-d9fd7a36-1bb9-47a3-9cfe-d46abcf2b7a4.gif)
 
+## Screenshot of the web-UI 
+![Screenshot (1349)](https://user-images.githubusercontent.com/99189621/195612606-24bd1051-a3c7-4364-8216-ca2de09ee40f.png)
 
 
 
