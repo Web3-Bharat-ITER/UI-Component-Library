@@ -5,7 +5,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 body{
-    background: #ededed;
+    background: #eae6e6;
     padding: 2rem;
 }
 h1{
@@ -15,13 +15,20 @@ h1{
     margin-bottom: 1rem;
 }
 .main-area{
-    background: white;
+  border-radius: 30px;
+background: #eae6e6;
+box-shadow:  -11px 11px 22px #c7c4c4,
+             11px -11px 22px #ffffff;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 .heading-box{
+    border-radius: 30px;
+background: #eae6e6;
+box-shadow: inset -6px 6px 12px #b7b3b3,
+            inset 6px -6px 12px #939191;
     background: #000000;
     color: white;
     display: flex;
@@ -86,8 +93,10 @@ h1{
 .each-project
 {
     padding: 1rem;
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    border-radius: 20px !important;
+    border-radius: 30px;
+background: #eae6e6;
+box-shadow: inset -12px 12px 24px #d5d1d1,
+            inset 12px -12px 24px #fffbfb;
 }
 .each-project h2{
     letter-spacing: 2px;
@@ -136,7 +145,11 @@ h1{
 }
 .contribution-box{
     padding: 1rem;
-}
+    border-radius: 30px;
+background: #eae6e6;
+box-shadow: inset -11px 11px 22px #c7c4c4,
+            inset 11px -11px 22px #ffffff;
+        }
 .contribution-box img{
     width: 100%;
 }
