@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Metaverse.jpg");
+    background-color: #21dcdc;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    /* CHANGE TO GRID */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+    width: 940px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.card {
+    background-color: rgb(216, 154, 120);
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-header img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    min-height: 250px;
+}
+
+.card-body h4 {
+    margin: 10px 0;
+}
+
+.card-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
+}
+
+.tag {
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.tag-teal {
+    background-color: #3d1d94;
+}
+
+.tag-purple {
+    background-color: #3d1d94;
+}
+
+.tag-pink {
+    background-color: #3d1d94;
+}
+
+.user {
+    display: flex;
+    margin-top: auto;
+}
+
+.user img {
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+
+.user-info h5 {
+    margin: 0;
+}
+
+.user-info small {
+    color: #000000;
+}
+
+@media (max-width: 940px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
