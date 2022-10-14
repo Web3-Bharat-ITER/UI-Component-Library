@@ -1,5 +1,5 @@
 # UI-Component-Library
-This repo is all about the Reuseable UI-Components. You can find and contribute new UI components like cards, login pages, Nav-bars, clip-paths etc.
+## This repo is all about the Reuseable UI-Components. You can find and contribute new UI components like cards, login pages, Nav-bars, clip-paths etc.
 
 # Contribution is fun! :green_heart:
 
