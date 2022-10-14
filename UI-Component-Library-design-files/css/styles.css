@@ -87,7 +87,7 @@ h1{
 {
     padding: 1rem;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    border-radius: 10px;
+    border-radius: 20px !important;
 }
 .each-project h2{
     letter-spacing: 2px;
