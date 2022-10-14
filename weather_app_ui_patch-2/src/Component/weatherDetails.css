@@ -1,0 +1,27 @@
+.weatherDetails-wrapper{
+    background-color : #FFF;
+    width : 58vw;
+    padding : 1.5rem;
+}
+
+.weather-details-info-wrapper{
+    display : grid;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 5vh 5vh 5vh;
+    align-items : center;
+    padding : 0.5rem;
+}
+
+.weather-details-info{
+    display : flex;
+    justify-content : space-between;
+    width : 100%;
+}
+
+span{
+    margin-right : 2rem;
+}
+
+h1{
+    margin : 2px;
+}

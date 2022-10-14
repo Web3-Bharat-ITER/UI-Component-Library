@@ -1,0 +1,149 @@
+{
+    "query": {
+     "count": 1,
+     "created": "2016-11-22T19:38:25Z",
+     "lang": "en-US",
+     "results": {
+      "channel": {
+       "units": {
+        "distance": "mi",
+        "pressure": "in",
+        "speed": "mph",
+        "temperature": "F"
+       },
+       "title": "Yahoo! Weather - New York, NY, US",
+       "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2459115/",
+       "description": "Yahoo! Weather for New York, NY, US",
+       "language": "en-us",
+       "lastBuildDate": "Tue, 22 Nov 2016 02:38 PM EST",
+       "ttl": "60",
+       "location": {
+        "city": "New York",
+        "country": "United States",
+        "region": " NY"
+       },
+       "wind": {
+        "chill": "32",
+        "direction": "310",
+        "speed": "29"
+       },
+       "atmosphere": {
+        "humidity": "40",
+        "pressure": "1017.0",
+        "rising": "0",
+        "visibility": "16.1"
+       },
+       "astronomy": {
+        "sunrise": "6:52 am",
+        "sunset": "4:33 pm"
+       },
+       "image": {
+        "title": "Yahoo! Weather",
+        "width": "142",
+        "height": "18",
+        "link": "http://weather.yahoo.com",
+        "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+       },
+       "item": {
+        "title": "Conditions for New York, NY, US at 02:00 PM EST",
+        "lat": "40.71455",
+        "long": "-74.007118",
+        "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2459115/",
+        "pubDate": "Tue, 22 Nov 2016 02:00 PM EST",
+        "condition": {
+         "code": "23",
+         "date": "Tue, 22 Nov 2016 02:00 PM EST",
+         "temp": "42",
+         "text": "Breezy"
+        },
+        "forecast": [
+         {
+          "code": "23",
+          "date": "22 Nov 2016",
+          "day": "Tue",
+          "high": "44",
+          "low": "35",
+          "text": "Breezy"
+         },
+         {
+          "code": "30",
+          "date": "23 Nov 2016",
+          "day": "Wed",
+          "high": "47",
+          "low": "34",
+          "text": "Partly Cloudy"
+         },
+         {
+          "code": "26",
+          "date": "24 Nov 2016",
+          "day": "Thu",
+          "high": "51",
+          "low": "38",
+          "text": "Cloudy"
+         },
+         {
+          "code": "26",
+          "date": "25 Nov 2016",
+          "day": "Fri",
+          "high": "51",
+          "low": "45",
+          "text": "Cloudy"
+         },
+         {
+          "code": "30",
+          "date": "26 Nov 2016",
+          "day": "Sat",
+          "high": "51",
+          "low": "44",
+          "text": "Partly Cloudy"
+         },
+         {
+          "code": "30",
+          "date": "27 Nov 2016",
+          "day": "Sun",
+          "high": "49",
+          "low": "38",
+          "text": "Partly Cloudy"
+         },
+         {
+          "code": "12",
+          "date": "28 Nov 2016",
+          "day": "Mon",
+          "high": "50",
+          "low": "38",
+          "text": "Rain"
+         },
+         {
+          "code": "12",
+          "date": "29 Nov 2016",
+          "day": "Tue",
+          "high": "54",
+          "low": "42",
+          "text": "Rain"
+         },
+         {
+          "code": "28",
+          "date": "30 Nov 2016",
+          "day": "Wed",
+          "high": "54",
+          "low": "43",
+          "text": "Mostly Cloudy"
+         },
+         {
+          "code": "39",
+          "date": "01 Dec 2016",
+          "day": "Thu",
+          "high": "51",
+          "low": "42",
+          "text": "Scattered Showers"
+         }
+        ],
+        "description": "<![CDATA[<img src=\"http://l.yimg.com/a/i/us/we/52/23.gif\"/>\n<BR />\n<b>Current Conditions:</b>\n<BR />Breezy\n<BR />\n<BR />\n<b>Forecast:</b>\n<BR /> Tue - Breezy. High: 44Low: 35\n<BR /> Wed - Partly Cloudy. High: 47Low: 34\n<BR /> Thu - Cloudy. High: 51Low: 38\n<BR /> Fri - Cloudy. High: 51Low: 45\n<BR /> Sat - Partly Cloudy. High: 51Low: 44\n<BR />\n<BR />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*https://weather.yahoo.com/country/state/city-2459115/\">Full Forecast at Yahoo! Weather</a>\n<BR />\n<BR />\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)\n<BR />\n]]>",
+        "guid": {
+         "isPermaLink": "false"
+        }
+       }
+      }
+     }
+    }
+   }
