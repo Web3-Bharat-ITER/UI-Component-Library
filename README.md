@@ -1,5 +1,5 @@
 # UI-Component-Library
-This repo is all about the Reuseable UI-Components. You can find and contribute new UI components like cards, login pages, Nav-bars, clip-paths etc.
+## This repo is all about the Reuseable UI-Components. You can find and contribute new UI components like cards, login pages, Nav-bars, clip-paths etc.
 
 # Contribution is fun! :green_heart:
 
@@ -11,6 +11,8 @@ Happy Submissions :slightly_smiling_face:
 ## Contributing Guidelines
 - Check already open issues for contributing to this repository.
 - If you find something that you can contribute and there is no issue open for it, you can open a issue and we will assign it to you.
+- Always add a screenshot of your work with pull request for review purpose.
+- Star the Repository and fork it so that you are able to contribute to this repository.
 - Do not make spam pull requests by adding just boiler plate code or removing white spaces from the documentation.
 - You can always use the discussion tab to open a discussion, if you need any help and answers.
 - If you are contributing you project, kindly make a separate directory/folder for it.

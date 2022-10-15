@@ -1,0 +1,258 @@
+
+
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .text-img {
+        height: 803px;
+        border-radius: inherit;
+        padding: 229px 20px 0px 50px;
+    }
+    .two_box h2 {
+        font-size: 39px;
+    }
+    .offer {
+        font-size: 65px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 0px 7px;
+    }
+    .text-img {
+        height: 803px;
+        border-radius: inherit;
+        padding: 229px 20px 0px 50px;
+    }
+    .text-bg {
+        padding-top: 166px;
+    }
+    .text-bg h1 {
+        padding-top: 0px;
+        font-size: 51px;
+        line-height: 70px;
+    }
+    .text-bg span {
+        font-size: 33px;
+        line-height: 45px;
+    }
+    .best_box h4 {
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .best_box p {
+        font-size: 16px;
+        padding-top: 12px;
+    }
+    .two_box {
+        padding: 0 10px;
+    }
+    .two_box h2 {
+        font-size: 27px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+    .offer {
+        font-size: 42px;
+    }
+    .testimonial_Carousel .test_box p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .cont span {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .multi {
+        font-size: 36px;
+    }
+    .cont h3 {
+        font-size: 28px;
+        line-height: 43px;
+    }
+    .cont_call h3 {
+        font-size: 33px;
+        line-height: 47px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header {
+        padding: 15px 30px 10px 30px;
+    }
+    .mean-container .mean-bar {
+        margin-top: 0px;
+    }
+    .text-bg {
+        max-width: inherit;
+        float: inherit;
+        padding-top: 88px;
+    }
+    .text-bg h1 {
+        font-size: 64px;
+    }
+    .text-bg span {
+        font-size: 37px;
+        line-height: 46px;
+    }
+     .text-img h3 {
+        display: none;
+    }
+    .main_form {
+        padding: 50px 20px 0px 20px;
+    }
+    .two_box h2 {
+        font-size: 39px;
+        padding-top: 30px;
+    }
+    .two_box p {
+        padding-bottom: 30px
+    }
+    .cont h3 {
+        font-size: 35px;
+    }
+    .text-img {
+        height: auto;
+        border-radius: inherit;
+        padding: 40px 20px 40px 50px;
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+    }
+    .navigation .navbar-collapse {
+        background: #2bcc91;
+        padding: 20px;
+        margin-top: 46px;
+        position: absolute;
+        width: 100%;
+        margin-right: 20px;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #000;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        border: inherit;
+        float: right;
+        padding-top: 6px;
+    }
+    .navigation.navbar-dark .navbar-toggler-icon {
+        background: url(../images/menu_icon.png);
+        background-repeat: no-repeat;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        padding: 30px 0px 0px 0px;
+    }
+    .logo {
+        text-align: center !important;
+        padding-bottom: 6px;
+        float: left;
+    }
+    .text-bg h1 {
+        font-size: 38px;
+        line-height: 55px;
+    }
+    .text-bg span {
+        font-size: 35px;
+        line-height: 44px;
+    }
+
+    .text-img h3 {
+        display: none;
+    }
+    .text-img {
+        height: auto;
+        border-radius: inherit;
+        padding: 40px 20px 40px 50px;
+    }
+    .titlepage h2 {
+        font-size: 40px;
+        line-height: 59px;
+    }
+    .text-bg {
+        padding-top: 130px;
+    }
+    .cont h3 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .multi {
+        font-size: 37px;
+    }
+    .two_box {
+        padding: 0 10px;
+    }
+    .offer {
+        font-size: 50px;
+    }
+    .main_form {
+        padding: 50px 20px 0px 20px;
+    }
+    .two_box h2 {
+        font-size: 24px;
+        padding-top: 27px;
+        line-height: 31px;
+    }
+    .two_box p {
+        padding-bottom: 30px
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+        margin-top: -45px;
+    }
+    .navigation .navbar-collapse {
+        background: #2bcc91;
+        padding: 20px;
+        margin-top: 46px;
+        position: absolute;
+        width: 100%;
+        margin-right: 20px;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #000;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        float: right;
+        margin-right: 2px;
+        border: inherit;
+    }
+    .testimonial_box {
+        padding: 0px 19px 40px 20px;
+    }
+    .navigation.navbar-dark .navbar-toggler-icon {
+        background: url(../images/menu_icon.png);
+        background-repeat: no-repeat;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: none;
+    }
+    .cont_call h3 {
+        font-size: 35px;
+        line-height: 49px;
+    }
+}
+
+    

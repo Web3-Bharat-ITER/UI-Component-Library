@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #000000;
+  min-height: 300 vh;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 12;
+}
+header .logo {
+  font-weight: 700;
+  color: rgb(197, 153, 59);
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(197, 153, 59);
+  border-radius: 15px;
+}
+header ul li a:hover {
+  background: #fff;
+  color: #0a2a43;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: Top;
+}
+section::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #e8b563, transparent);
+  z-index: 100000;
+}
+section::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: #e8b563;
+  z-index: 100000;
+  mix-blend-mode: color;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+section img#Egypt {
+  z-index: 12;
+}
+#text {
+  position: absolute;
+  color: rgb(197, 153, 59);
+  white-space: nowrap;
+  font-size: 1.1vw;
+  text-decoration: underline;
+  transform: translateY(-5px);
+  z-index: 9;
+}
+#front {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  padding: 5px;
+  font-size: 6.5vw;
+  transform: translateY(40px);
+  z-index: 9;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: rgb(197, 153, 59);
+  padding: 5px;
+  font-size: 16px;
+  transform: translateY(25px);
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+}
+.dropdown {
+  position: relative;
+  display: block;
+  align-items: center;
+}
+.dropdown-content {
+  position: absolute;
+  background-color: transparent;
+  color: rgb(197, 153, 59);
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 11;
+}
+.dropdown-content a {
+  color: rgb(197, 153, 59);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: transparent;
+}
+.dropdown-content a:hover:before {
+  background-color: transparent;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.writing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #e8b563;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 100px;
+  /* z-index: -1; */
+}
+.writing .card .paragraph img {
+  z-index: 1;
+}
+.writing .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.writing .card .paragraph {
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.writing h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.writing h2 span#M,
+.writing h2 span#H {
+  color: #a27047;
+}
+.writing p {
+  font-size: 1.2em;
+  color: #fff;
+}
+section .m {
+  z-index: -3;
+  align-items: center;
+  position: relative;
+  display: flex;
+  transform: translateY(2000px);
+}
+
+.m {
+  visibility: 0;
+  width: 0;
+}

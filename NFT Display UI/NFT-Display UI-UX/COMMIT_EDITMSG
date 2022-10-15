@@ -1,0 +1,52 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#	new file:   README.md
+#	new file:   package-lock.json
+#	new file:   package.json
+#	new file:   public/favicon.ico
+#	new file:   public/index.html
+#	new file:   public/logo192.png
+#	new file:   public/logo512.png
+#	new file:   public/manifest.json
+#	new file:   public/robots.txt
+#	new file:   src/App.css
+#	new file:   src/App.js
+#	new file:   src/App.test.js
+#	new file:   src/assets/eth.png
+#	new file:   src/assets/header/cryptopunk-logo.png
+#	new file:   src/assets/header/search.png
+#	new file:   src/assets/header/theme-switch.png
+#	new file:   src/assets/owner/check.png
+#	new file:   src/assets/owner/instagram.png
+#	new file:   src/assets/owner/more.png
+#	new file:   src/assets/owner/punkhead.png
+#	new file:   src/assets/owner/twitter.png
+#	new file:   src/assets/weth.png
+#	new file:   src/components/CollectionCard.css
+#	new file:   src/components/CollectionCard.js
+#	new file:   src/components/Header.css
+#	new file:   src/components/Header.js
+#	new file:   src/components/Main.js
+#	new file:   src/components/PunkList.css
+#	new file:   src/components/PunkList.js
+#	new file:   src/components/main.css
+#	new file:   src/index.css
+#	new file:   src/index.js
+#	new file:   src/logo.svg
+#	new file:   src/punks/1.jpg
+#	new file:   src/punks/2.jpg
+#	new file:   src/punks/3.jpg
+#	new file:   src/punks/4.jpg
+#	new file:   src/punks/5.jpg
+#	new file:   src/punks/6.jpg
+#	new file:   src/reportWebVitals.js
+#	new file:   src/setupTests.js
+#

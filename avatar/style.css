@@ -1,0 +1,19 @@
+.avatar{
+    border:1px solid #cecece;
+    border-radius:50%
+}
+
+.avatar-sm{
+    height:30px;
+    width:30px;
+}
+
+.avatar-md{
+    height:50px;
+    width:50px;
+}
+
+.avatar-lg{
+    height:70px;
+    width:70px;
+}

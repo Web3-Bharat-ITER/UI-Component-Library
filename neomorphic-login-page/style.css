@@ -11,14 +11,15 @@ html,body{
 }
 
 body{
-  /* place-items: center;
-  text-align: center; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  text-align: center;
   background: #dde1e7;
 }
 
+.content-wrapper {
+    /* display: flex; */
+}
 
 .content{
   width: 900px;
@@ -169,29 +170,4 @@ button:focus{
     background-position-x: center;
     width: 50%;
     border-radius: 10px 0px 0px 10px;
-}
-
-/* SMARTPHONES PORTRAIT */
-@media only screen and (min-width: 300px) {
-
-
-}
-
-/* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 480px) {
-
-
-}
-
-/* TABLETS PORTRAIT */
-@media only screen and (min-width: 768px) {
-
-
-}
-
-
-/* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (min-width: 1024px) {
-
-
 }

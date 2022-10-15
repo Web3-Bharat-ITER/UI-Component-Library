@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    margin:10px;
+}
+
+.webgl
+{
+    position: relative;
+    top: 10;
+    left: 0;
+    
+}
+.text
+{
+    color: black;
+    font-weight: 2;
+    font-size: 62px;
+    margin: 50px;
+}
+.flexbox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

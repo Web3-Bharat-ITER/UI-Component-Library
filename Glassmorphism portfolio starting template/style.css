@@ -1,0 +1,143 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	background-image: url(1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.box{
+	width: 250px;
+	height: 400px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38,135,0.37);
+	backdrop-filter: blur(6px);
+	border: 1px solid rgba(255,255,255,0.18);
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.camera{
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38,135,0.37);
+	backdrop-filter: blur(6px);
+	border: 1px solid rgba(255,255,255,0.18);
+	margin-top: .5rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.camera::before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38,135,0.37);
+	backdrop-filter: blur(6px);
+	border: 1px solid rgba(255,255,255,0.18);
+	border-radius: 50%;
+
+}
+
+.box img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-top: 3rem;
+}
+
+.box h2{
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: 700;
+	color: white;
+	margin-top: 1.5rem;
+	letter-spacing: 2px;
+}
+
+label{
+	color: white;
+	font-size: 14px;
+}
+
+.heading{
+	margin-top: 1.5rem;
+	display: flex;
+	text-align: center;
+}
+
+.count{
+	display: flex;
+	text-align: center;
+	margin-top: .1rem;
+
+}
+
+span{
+	width: 100px;
+	color: white;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: sans-serif;
+}
+
+.btn{
+	padding: .8rem 0;
+	width: 80%;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background: linear-gradient(to right,#7303c0,#ec38bc,#7303c0);
+	margin-top: 1.2rem;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: white;
+	cursor: pointer;
+}
+
+.home{
+	margin-top: 1rem;
+	width: 50px;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38,135,0.37);
+	backdrop-filter: blur(6px);
+	border: 1px solid rgba(255,255,255,0.18);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.home::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38,135,0.37);
+	backdrop-filter: blur(19px);
+	border: 1px solid rgba(255,255,255,0.18);
+	border-radius: 5px;
+
+}
