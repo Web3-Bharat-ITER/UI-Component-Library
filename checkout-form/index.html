@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class='container'>
+        <div class='window'>
+          <div class='order-info'>
+            <div class='order-info-content'>
+              <div class="title-form">Order Summary</div>
+              <div class="orded-total-content">
+                <div class="ordered-items">
+                  <div class="list-item">
+                    <div class="img-container">
+                      <img src='./img/vans.png' class='full-width'/>
+                    </div>
+                    <div class="container-item-detail">
+                      <div class="title-item">Vans</div>
+                      <div class="subtitle-item">Oldskool white</div>
+                      <div class="detail-item">Color: Black/white, Size: 10</div>
+                      <div class='price-item'>$70.00</div>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <div class="img-container">
+                      <img src='./img/airjordan.png' class='full-width'/>
+                    </div>
+                    <div class="container-item-detail">
+                      <div class="title-item">Nike</div>
+                      <div class="subtitle-item">Air jordan one high</div>
+                      <div class="detail-item">Color: Red/White, Size: 11.5</div>
+                      <div class='price-item'>$166.04</div>
+                    </div>
+                  </div>
+                  <div class="list-item">
+                    <div class="img-container">
+                      <img src='./img/adidas.png' class='full-width'/>
+                    </div>
+                    <div class="container-item-detail">
+                      <div class="title-item">Adidas</div>
+                      <div class="subtitle-item">Superstar shoes</div>
+                      <div class="detail-item">Color: White/Black, Size: 6.5</div>
+                      <div class='price-item'>$84.02</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="total-items">
+                  <div class="line-container">
+                    <div class="key">Tax 10%</div>
+                    <div class="value">$32.006</div>
+                  </div>
+                  <div class="line-container">
+                    <div class="key">Delivery</div>
+                    <div class="value">$5</div>
+                  </div>
+                  <div class="line-container">
+                    <div class="key title">Total</div>
+                    <div class="value">$357.066</div>
+                  </div>
+                </div>
+              </div>
+      </div>
+      </div>
+              <div class='credit-info'>
+                <div class='credit-info-content'>
+                  <div class="title">Payment Method</div>
+                  <div>
+                    <table class='half-input-table'>
+                      <tr><td>Please select card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                        <div class='dropdown-select'>
+                        <ul>
+                          <li>Master Card</li>
+                          <li>American Express</li>
+                          </ul></div>
+                        </div>
+                       </td></tr>
+                    </table>
+                    <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+                    Card Number
+                    <input class='input-field'></input>
+                    Card Holder
+                    <input class='input-field'></input>
+                    <table class='half-input-table'>
+                      <tr>
+                        <td> Expires
+                          <input class='input-field'></input>
+                        </td>
+                        <td>CVC
+                          <input class='input-field'></input>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <button class='pay-btn'><span class="fa fa-shopping-cart"></span> Checkout</button>
+      
+                </div>
+      
+              </div>
+            </div>
+      </div>
+      <script>
+        $(document).ready(function(){
+          var cardDrop = document.getElementById('card-dropdown');
+          var activeDropdown;
+          cardDrop.addEventListener('click',function(){
+            var node;
+            for (var i = 0; i < this.childNodes.length-1; i++)
+              node = this.childNodes[i];
+              if (node.className === 'dropdown-select') {
+                node.classList.add('visible');
+                activeDropdown = node; 
+              };
+          })
+
+          window.onclick = function(e) {
+            console.log(e.target.tagName)
+            console.log('dropdown');
+            console.log(activeDropdown)
+            if (e.target.tagName === 'LI' && activeDropdown){
+              if (e.target.innerHTML === 'Master Card') {
+                document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/2vbqk5lcpi7hjoc/MasterCard_Logo.svg.png';
+                    activeDropdown.classList.remove('visible');
+                activeDropdown = null;
+                e.target.innerHTML = document.getElementById('current-card').innerHTML;
+                document.getElementById('current-card').innerHTML = 'Master Card';
+              }
+              else if (e.target.innerHTML === 'American Express') {
+                  document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/f5hyn6u05ktql8d/amex-icon-6902.png';
+                    activeDropdown.classList.remove('visible');
+                activeDropdown = null;
+                e.target.innerHTML = document.getElementById('current-card').innerHTML;
+                document.getElementById('current-card').innerHTML = 'American Express';      
+              }
+              else if (e.target.innerHTML === 'Visa') {
+                  document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png';
+                    activeDropdown.classList.remove('visible');
+                activeDropdown = null;
+                e.target.innerHTML = document.getElementById('current-card').innerHTML;
+                document.getElementById('current-card').innerHTML = 'Visa';
+              }
+            }
+            else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
+              activeDropdown.classList.remove('visible');
+              activeDropdown = null;
+            }
+          }
+
+        });
+      </script>
+</body>
+</html>
