@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Clock Component</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="clock-container">
+            <span class="clock"></span>
+            <div class="clock-description">
+                <div class="clock-desc-wrapper">
+                    <span class="clock-desc-hours">Hours</span>
+                    <span class="clock-desc-minutes">Minutes</span>
+                    <span class="clock-desc-seconds">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+         $(document).ready(function(){
+            var Clock = (function(){
+            var exports = function(element) {
+                this._element = element;
+                var html = '';
+                for (var i=0;i<6;i++) {
+                    html += '<span>&nbsp;</span>';
+                }
+                this._element.innerHTML = html;
+                this._slots = this._element.getElementsByTagName('span');
+                this._tick();
+            };
+            exports.prototype = {
+                _tick:function() {
+                    var time = new Date();
+                    this._update(this._pad(time.getHours()) + this._pad(time.getMinutes()) + this._pad(time.getSeconds()));
+                    var self = this;
+                    setTimeout(function(){
+                        self._tick();
+                    },1000);
+                },
+
+                _pad:function(value) {
+                    return ('0' + value).slice(-2);
+                },
+
+                _update:function(timeString) {
+
+                    var i=0,l=this._slots.length,value,slot,now;
+                    for (;i<l;i++) {
+
+                        value = timeString.charAt(i);
+                        slot = this._slots[i];
+                        now = slot.dataset.now;
+
+                        if (!now) {
+                            slot.dataset.now = value;
+                            slot.dataset.old = value;
+                            continue;
+                        }
+
+                        if (now !== value) {
+                            this._flip(slot,value);
+                        }
+                    }
+                },
+
+                _flip:function(slot,value) {
+
+                    // setup new state
+                    slot.classList.remove('flip');
+                    slot.dataset.old = slot.dataset.now;
+                    slot.dataset.now = value;
+
+                    // force dom reflow
+                    slot.offsetLeft;
+
+                    // start flippin
+                    slot.classList.add('flip');
+
+                }
+
+            };
+            return exports;
+            }());
+
+            var i=0,clocks = document.querySelectorAll('.clock'),l=clocks.length;
+            for (;i<l;i++) {
+            new Clock(clocks[i]);
+            }
+         });
+    </script>
+</body>
+</html>
