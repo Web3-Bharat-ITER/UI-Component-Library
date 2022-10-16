@@ -147,3 +147,8 @@ img {
   border-top: 1px solid #ddd;
 }
 
+.orig-price {
+    font-size: 1.3rem;
+    opacity: 0.5;
+    text-decoration: line-through 2px;
+}
