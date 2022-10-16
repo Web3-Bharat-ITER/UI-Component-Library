@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+body{
+  font-family: 'Muli', sans-serif;
+  background: #DDDDDD;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+    color: #515151;
+    font-weight: 300;
+    padding-top: 15px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+h2 {
+    color: #515151;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 2.5rem;
+    font-size: 14px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+      
+h4 { 
+    margin: 0;
+    color: #727272;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px
+}
+
+p { 
+    font-size: 12px; 
+    line-height: 20px;
+    color: #727272;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+img {
+  object-fit: cover;
+  border-radius:6px;
+}
+
+.container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card img {
+  height: 200px;
+}
+
+.card-body {
+  padding: 5px;
+  
+}
+
+.card{
+  line-height: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  height: 540px;
+  background:#fff;
+  padding:15px;
+  border-radius:6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  position:relative;
+  margin:20px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.card-body p {
+  color: #3d3d3d;
+  font-size: 14px;
+}
+
+.view-btn a {
+  padding: 5px 15px;
+  border: 0.5px solid #007bff;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #007bff;
+  display: flex;
+}
+
+.btn a {
+  border: 0.5px solid #007bff;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #007bff;
+  display: flex;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group .btn a {
+  padding: 5px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn-group a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.card-footer{
+  text-align:center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0 5px;
+  border-top: 1px solid #ddd;
+}
+
