@@ -1,0 +1,40 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 30px;
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+footer li {
+	line-height: 20px;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer input {
+	padding: 12px 24px;
+	background-color: white;
+	box-shadow: unset;
+	outline: unset;
+	border: none;
+
+}
