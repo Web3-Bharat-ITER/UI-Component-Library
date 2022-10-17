@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.outer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #252627;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-image: linear-gradient(to bottom, rgba(50, 50, 50), rgba(1, 0, 0));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 20px rgb(120, 120, 120);
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+    font-family: 'Archivo', sans-serif;
+}
+
+img {
+    position: absolute;
+    top: 30px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50% 50%;
+}
+
+h3 {
+    position: absolute;
+    align-self: center;
+    font-size: 30px;
+    color: white;
+}
+
+.intro {
+    position: absolute;
+    margin-top: 70px;
+    align-self: center;
+    color: rgb(23, 161, 225);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.linkd {
+    position: relative;
+    top: 75px;
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+
+.twt {
+    position: relative;
+    top: 75px;
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+
+.github {
+    position: relative;
+    top: 75px;
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+
+.hov:hover{
+    filter:invert(0%);
+    transform: scale(1.15);
+    background-color:rgb(1, 60, 179);
+}
+
+.btn {
+    position: absolute;
+    bottom: 45px;
+    height: 40px;
+    width: 140px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    letter-spacing: 2px;
+    background-color: rgb(7, 73, 124);
+    box-shadow: 0px 1px 30px rgb(15, 86, 140);
+}
+
+.btn:hover {
+    font-size: 15px;
+    color: black;
+    background-color: white;
+}
