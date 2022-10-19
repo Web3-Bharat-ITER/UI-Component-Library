@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6f43130279.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Job Application Profile</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="center">
+          <div class="card my-5">
+            <div class="card-body">
+              <h3 class="card-title text-center">Curriculum Vitae</h3>
+              <form class="form-signin">
+                <img
+                  src="https://www.fillmurray.com/250/250"
+                  alt="Avatar"
+                  class="avatar"
+                />
+
+                <div class="form-label-group">
+                  <h5 for="inputEmail">First Name</h5>
+                  <input
+                    type="text"
+                    id="inputFirstName"
+                    class="form-control"
+                    placeholder="Bill"
+                    required
+                    autofocus
+                  />
+                </div>
+
+                <div class="form-label-group">
+                  <h5 for="inputPassword">Last Name</h5>
+                  <input
+                    type="text"
+                    id="inputLastName"
+                    class="form-control"
+                    placeholder="Murray"
+                    required
+                  />
+                </div>
+
+                <div class="form-label-group">
+                  <h5 for="inputBio">Biography</h5>
+                  <textarea
+                    rows="5"
+                    type="text"
+                    id="inputBio"
+                    class="form-control"
+                    placeholder="My name is William James Murray and I am an avid software developer as well as an American actor and comedian. I am best known for my deadpan delivery. I rose to fame on The National Lampoon Radio Hour before becoming a national presence on Saturday Night Live from 1977 to 1980, where I received a Primetime Emmy Award for Outstanding Writing for a Variety Series"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-label-group">
+                  <h5 for="inputBio">Skills</h5>
+                  <div class="row">
+                    <div class="col-4">
+                      <ul>
+                        <li>ReactJS</li>
+                        <li>SQL</li>
+                        <li>GraphQL</li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>NodeJS</li>
+                        <li>AWS Services</li>
+                        <li>HTML & CSS</li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                      <ul>
+                        <li>Angular</li>
+                        <li>Standup Comedy</li>
+                        <li>Bootstrap</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-label-group">
+                  <h5 for="inputExperience">Work Experience</h5>
+                  <div class="row experience-block">
+                    <div class="col-5">
+                      <h6>
+                        <span class="label label-default"
+                          >The National Lampoon Radio Hour</span
+                        >
+                      </h6>
+                    </div>
+                    <div class="col-3">
+                      <input
+                        class="form-control"
+                        type="date"
+                        value="1974-05-06"
+                      />
+                    </div>
+                    -
+                    <div class="col-3 right">
+                      <input
+                        class="form-control"
+                        type="date"
+                        value="1977-12-01"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <ul class="list-group experience-block">
+                        <li class="list-group-item" contenteditable="true">
+                          Improvised Comedy
+                        </li>
+                        <li class="list-group-item" contenteditable="true">
+                          Radio Personality
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row experience-block">
+                    <div class="col-5">
+                      <h6>
+                        <span class="label label-default"
+                          >Saturday Night Live</span
+                        >
+                      </h6>
+                    </div>
+                    <div class="col-3">
+                      <input
+                        class="form-control"
+                        type="date"
+                        value="1977-02-16"
+                      />
+                    </div>
+                    -
+                    <div class="col-3 right">
+                      <input
+                        class="form-control"
+                        type="date"
+                        value="1980-12-01"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <ul class="list-group experience-block">
+                        <li class="list-group-item" contenteditable="true">
+                          Improvised Comedy
+                        </li>
+                        <li class="list-group-item" contenteditable="true">
+                          Television Personality
+                        </li>
+                        <li class="list-group-item" contenteditable="true">
+                          Comedy Show Host
+                        </li>
+                        <li class="list-group-item" contenteditable="true">
+                          Comedy Writer
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-label-group">
+                  <h5 for="inputExperience">Education</h5>
+                  <div class="row experience-block">
+                    <div class="col-5">
+                      <h6>
+                        <span class="label label-default"
+                          >Loyola Academy - Grade School</span
+                        >
+                      </h6>
+                    </div>
+                    <div class="col-3">
+                      <input
+                        class="form-control"
+                        type="date"
+                        value="1958-02-16"
+                      />
+                    </div>
+                    -
+                    <div class="col-3 right">
+                      <input
+                        class="form-control"
+                        type="date"
+                        value="1963-12-01"
+                      />
+                    </div>
+                  </div>
+                  <div class="row experience-block">
+                    <div class="col-5">
+                      <h6>
+                        <span class="label label-default"
+                          >Regis University - Denver, Colorado</span
+                        >
+                      </h6>
+                    </div>
+                    <div class="col-3">
+                      <input
+                        class="form-control"
+                        type="date"
+                        value="1964-02-01"
+                      />
+                    </div>
+                    -
+                    <div class="col-3 right">
+                      <input
+                        class="form-control"
+                        type="date"
+                        value="1964-05-29"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-label-group">
+                  <h5 for="inputExperience">Certificates</h5>
+                  <ul>
+                    <div>
+                      <img
+                        src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Developer-Associate_badge.5c083fa855fe82c1cf2d0c8b883c265ec72a17c0.png"
+                        alt="cert-image-aws"
+                        class="cert-image"
+                      />
+                      AWS Developer Associate
+                    </div>
+                    <div>
+                      <img
+                        src="https://images.credly.com/size/680x680/images/60de4761-84eb-4d9f-a6bc-c290c2e65985/pmi-acp-600px.png"
+                        alt="cert-image-aws"
+                        class="cert-image"
+                      />
+                      PMI Agile Certified Practitioner (PMI-ACP)
+                    </div>
+                    <div>
+                      <img
+                        src="https://images.credly.com/images/08fad947-d6bb-4ac3-bd39-6e9faa5f7594/Oracle-Certification-badge_OC-CertifiedExpert.png"
+                        alt="cert-image-aws"
+                        class="cert-image"
+                      />
+                      Oracle Application Express Developer Certified Expert
+                    </div>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
