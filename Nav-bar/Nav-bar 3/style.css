@@ -1,0 +1,41 @@
+nav {
+  background-color: beige;
+}
+
+.fa-mug-hot {
+  margin-left: 50px;
+  margin-right: 10px;
+  color: #2a2b2e;
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: brown;
+}
+
+#navbarNav {
+  float: right !important;
+}
+.nav-link {
+  color: lightcoral;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn-outline-success {
+  color: saddlebrown;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-color: saddlebrown;
+}
+
+.btn-outline-success:hover {
+  background-color: saddlebrown;
+  border-color: white;
+}
