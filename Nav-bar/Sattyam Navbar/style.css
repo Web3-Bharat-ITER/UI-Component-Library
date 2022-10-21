@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    background: #00a9e6;
+    height: 70px;
+    width: 100%;
+
+}
+
+label.logo{
+    color: aliceblue;
+    font-size: 30px;
+    line-height: 70px;
+    padding: 0 90px;
+    font-weight: bold;
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+nav ul li a.active{
+    color: white;
+    background: #54b3d6;
+}
+li a{
+    width: auto;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+  
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    
+  }
+  
+  a:hover{
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+  }
+
+
+ nav .menu-btn {
+    /* display: inline-block; */
+   color: #fff;
+    cursor: pointer; 
+    float: right;
+    right: 6px;
+    align-items: center;
+     margin-right: 1%;
+     margin-top: 4%;
+    
+    display: none;
+    
+  }
+
+
+#click{
+    display: none;
+}
+
+
+
+@media (max-width: 952px){
+
+  nav .menu-btn{
+        display: block;
+    }
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+   
+
+     ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #2c3e50;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all .3s  ease;
+    }
+
+    #click:checked ~ ul{
+ 
+        left: 0%;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+   
+
+  
+
+   
+   
+    a.hover{
+        box-shadow: inset 100px 0 0 0 #54b3d6;
+        color: white;
+    }
+    @media (max-width: 285px) {
+       
+        nav .menu-btn{
+            margin-top: 0%;
+            margin-left: 0%;
+        }
+       
+        
+    }
+
+    
+}
+
+
+
