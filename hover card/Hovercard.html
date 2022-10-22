@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            font-size: 3vw;
+            text-align: center;
+            margin-bottom: 1vw;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .head {
+                font-size: 6vw;
+                margin-bottom: 2vw;
+            }
+        }
+
+        .sub {
+            font-size: 1.5vw;
+            text-align: center;
+            margin-bottom: 4vw;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .sub {
+                font-size: 3vw;
+                margin-bottom: 8vw;
+            }
+        }
+
+        .parent {
+            margin: 4vw 16vw 2vw 16vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .parent .box {
+            width: 45%;
+            padding: 2vw;
+            border: 0.2vw solid #171513;
+        }
+
+        .parent .box:hover {
+            background-color: #171513;
+            color: white;
+        }
+
+        .parent .box .heading {
+            font-size: 1.5vw;
+            margin-bottom: 1.5vw;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .parent .box .heading {
+                font-size: 3vw;
+                margin-bottom: 3vw;
+            }
+        }
+
+        .parent .box .subhead {
+            font-size: 1vw;
+            color: gray;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .parent .box .subhead {
+                font-size: 2vw;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .parent .box {
+                width: 90%;
+                font-size: 3vw;
+                margin-bottom: 4vw;
+                padding: 4vw;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .parent {
+                flex-direction: column;
+                margin: 4vw 8vw 0vw 8vw;
+                justify-content: flex-start;
+            }
+        }
+
+        .parent2 {
+            margin: 2vw 16vw 10vw 16vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .parent2 .box {
+            width: 45%;
+            font-size: 1.5vw;
+            padding: 2vw;
+            border: 0.2vw solid #171513;
+        }
+
+        .parent2 .box .heading {
+            font-size: 1.5vw;
+            margin-bottom: 1.5vw;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .parent2 .box .heading {
+                font-size: 3vw;
+                margin-bottom: 3vw;
+            }
+        }
+
+        .parent2 .box .subhead {
+            font-size: 1vw;
+            color: gray;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .parent2 .box .subhead {
+                font-size: 2vw;
+            }
+        }
+
+        .parent2 .box:hover {
+            background-color: #171513;
+            color: white;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .parent2 .box {
+                width: 90%;
+                font-size: 3vw;
+                padding: 4vw;
+                margin-bottom: 4vw;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .parent2 {
+                flex-direction: column;
+                justify-content: flex-start;
+                margin: 0vw 8vw 10vw 8vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head"><b>Services</b></div>
+    <div class="sub">REGONITIONS & ACCOMPLISHMENT</div>
+    <div class="parent">
+        <div class="box">
+            <div class="heading">
+                <b>Web Design</b>
+            </div>
+            <div class="subhead">
+                Design to me is something magical - I am lucky that it lets me get creative and build new projects.
+            </div>
+        </div>
+        <div class="box">
+            <div class="heading">
+                <b>Product Design</b>
+            </div>
+            <div class="subhead">
+                {"Even single project is a challenge that I accept eagerly. Let's implement innovative ideas together."}
+            </div>
+        </div>
+    </div>
+    <div class="parent2">
+        <div class="box">
+            <div class="heading">
+                <b>UI/UX Design</b>
+            </div>
+            <div class="subhead">
+                I am willing to solve any inquiry that comes from your side within minutes.
+            </div>
+        </div>
+        <div class="box">
+            <div class="heading">
+                <b>Artificial Intelligence</b>
+            </div>
+            <div class="subhead">
+                I will deliver my best in each and every project given to me. So you can trust me with everything.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
