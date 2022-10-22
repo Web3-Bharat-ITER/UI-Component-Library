@@ -1,0 +1,110 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.outer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f7cd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(177, 226, 250),
+    rgb(177, 213, 250)
+  );
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 20px rgb(241, 198, 113);
+  border-radius: 15px;
+  height: 400px;
+  width: 200px;
+}
+
+.img {
+  position: absolute;
+  top: 30px;
+  height: 120px;
+  width: 120px;
+  border-radius: 60% 60% 10% 10%;
+}
+
+.name {
+  position: absolute;
+  align-self: center;
+  font-size: 30px;
+  color: white;
+}
+
+.bio {
+  position: absolute;
+  margin-top: 70px;
+  align-self: center;
+  color: white;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.instagram {
+  position: relative;
+  top: 75px;
+  width: 25px;
+  height: 25px;
+  filter: invert(100%);
+}
+
+.twitter {
+  position: relative;
+  top: 75px;
+  width: 25px;
+  height: 25px;
+  filter: invert(100%);
+}
+
+.github {
+  position: relative;
+  top: 75px;
+  width: 25px;
+  height: 25px;
+  filter: invert(100%);
+}
+
+.hover:hover {
+  filter: invert(0%);
+  transform: scale(1.15);
+  background-color: rgb(102, 177, 248);
+  border-radius: 50%;
+}
+
+.btn {
+  position: absolute;
+  bottom: 45px;
+  height: 40px;
+  width: 140px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  letter-spacing: 2px;
+  background-color: rgb(102, 177, 248);
+  box-shadow: 0px 1px 30px rgb(78, 164, 244);
+}
+
+.btn:hover {
+  font-size: 15px;
+  color: black;
+  background-color: rgb(207, 235, 245);
+}
