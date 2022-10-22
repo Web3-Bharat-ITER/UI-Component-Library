@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"
+          href="style.css">
+    <link rel="stylesheet"
+          href="loader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Avatar Card</title>
+</head>
+<body>
+<div id="card" class="center">
+    <span class="loader"></span>
+    <div id="card-content">
+        <div>
+            <img src="#" alt="Avatar" class="avatar">
+        </div>
+        <div>
+            <h4 class="name"></h4>
+        </div>
+        <div id="details">
+            <div>
+                <ion-icon name="mail-outline"></ion-icon>
+                <span id="email"></span>
+            </div>
+            <div>
+                <ion-icon name="calendar-outline"></ion-icon>
+                <span id="birthday"></span>
+            </div>
+            <div>
+                <ion-icon name="call-outline"></ion-icon>
+                <span id="phone"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    // Make a request for a user with a given ID
+    axios.get('https://randomuser.me/api/')
+        .then(function (response) {
+            let data = response.data.results[0];
+            document.getElementsByClassName('avatar')[0].src = data.picture.medium;
+            document.getElementsByClassName('name')[0].innerHTML = data.name.title +' '+ data.name.first +' '+ data.name.last;
+            document.getElementById('email').innerHTML = data.email;
+            document.getElementById('birthday').innerHTML = data.dob.date;
+            document.getElementById('phone').innerHTML = data.phone;
+            document.getElementsByClassName('loader')[0].style.display = 'none';
+            document.getElementById('card-content').style.display = 'block';
+        });
+</script>
+</body>
+</html>
