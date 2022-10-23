@@ -1,0 +1,30 @@
+body {
+    background-image: url("placementcon.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+h1 {
+    color: deeppink;
+}
+
+h2 {
+    color: chartreuse;
+}
+
+h3 {
+    color: crimson;
+}
+
+p {
+    color: greenyellow;
+}
+
+ul li {
+    color: chartreuse;
+}
+
+a {
+    color: red;
+}
