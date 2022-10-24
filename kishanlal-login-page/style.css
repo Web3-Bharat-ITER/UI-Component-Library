@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Login page css starts */
+
+.main-login{
+    background-color: #fed362;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-signup{
+    background-color: #fed362;
+    align-items: center;
+    height: auto;
+}
+
+.login{
+    height: 100vh;
+}
+
+.signup{
+    height: auto;
+}
+
+label {
+    text-align: center;
+}
+
+.login .logo img{
+    width: 100%;
+}
+
+.login .logo-signup img{
+    width: 30%;
+}
+
+.login input{
+    background-color: #f5f8fa;
+    border-color: #f5f8fa;
+    color: #5e6278;
+}
+
+.login input:focus{
+    box-shadow: none;
+}
+
+.login .submit_btn{
+    padding: 15px;
+    font-weight: 500;
+}
+
+.login .submit_btn{
+    box-shadow: none;
+}
+
+.login .password-info{
+    font-size: 10px;
+}
+
+.tw{
+    min-width: 200px;
+    text-align: start;
+}
+
+/* Login page css ends */
