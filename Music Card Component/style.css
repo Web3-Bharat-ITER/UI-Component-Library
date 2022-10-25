@@ -1,5 +1,6 @@
 *{
-	background-color: #e6e6e6;
+	background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 	font-family: 'Sora';
 }
 .button{
@@ -7,66 +8,63 @@ padding: 5px;
 width: 60px;
 height: 60px;
 border-radius: 50px;
-background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+background:  #185fb5;
+box-shadow:  4px 6px 10px #d6d6d6,
+             -4px -6px 10px #f6f6f6;
+border: none;
 outline: none;
 font-size: 20px;
 text-align: center;
 vertical-align: center;
 }
-
 .app{
 	width: 40vh;
 	padding: 20px;
 	border-radius: 50px;
 	background: #e6e6e6;
-	box-shadow:  28px 28px 56px #d6d6d6,
-             -28px -28px 56px #f6f6f6;
-}
+	box-shadow:  -3px 2px 92px 33px rgb(242, 18, 123);
+             background:  #185fb5;
+            }
 .top-bar{
 	display: flex;
 	justify-content: space-between;
 	font-family: 'sans-serif' !important;
-    background-color: #c6426e;
-    padding: 10px;
-    border-radius: 20px;
-}
-h4{
-    background: none;
-    color: white;
+    padding: 0;
+    border-bottom: #000000;
+    background:  #185fb5;
 }
 .main{
 	justify-content: center;
 	display: flex;
 	align-items: center;
 	padding: 10vh;
-    background:linear-gradient(90deg, #642b73,#c6426e);
+    background: rgba( 105, 172, 255, 0.5 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+#h4{
+    background-color:none ;
+
 
 }
 .music-bar{
 	justify-content: center;
 	display: flex;
 	align-items: center;
-	padding: 3vh;
-    background: rgba( 255, 255, 255, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-margin-top: 10px;
+	padding: 20px;
+    background: #185fb5;
 }
 .music-picture{
 	padding: 10px;
-	border-radius: 140px;
+	border-radius: 100px;
+    
 	width: 180px;
 	height: 180px;
-background: #e6e6e6;
+background: #04428d;
 box-shadow:  28px 28px 56px #c8c8c8,
              -28px -28px 56px #ffffff;
 
@@ -82,6 +80,7 @@ box-shadow:  28px 28px 56px #c8c8c8,
 	align-items: center;
 	display: flex;
 	border-radius: 126px;
+    background:  #185fb5;
 
 box-shadow:  35px 35px 95px #e1e1e1,
              -35px -35px 95px #ebebeb;
@@ -105,7 +104,7 @@ box-shadow:  35px 35px 95px #e1e1e1,
 	
 	margin:4vh 4vh;
 	border-radius: 50px;
-background: #e6e6e6;
+background: #d61818;
 box-shadow:  26px 26px 46px #b3b3b3,
              -26px -26px 46px #ffffff;
 }
@@ -113,12 +112,19 @@ box-shadow:  26px 26px 46px #b3b3b3,
 	width: 31vh;
 
 }
+#seekbar{
+    background-color: #CF0A0A;
+    color: #000000;
+}
+
+
 
 input[type=range] {
-  height: 32px;
+  height: 10px;
   -webkit-appearance: none;
   width: 100%;
-  background: #e6e6e6;
+  background: #85aef1;
+  box-shadow: -3px 31px 99px 33px rgba(220,232,237,1)
 }
 input[type=range]:focus {
   outline: none;
@@ -132,9 +138,6 @@ input[type=range]::-webkit-slider-runnable-track {
   background: #B6B6B6;
   border-radius: 25px;
   border: 1px solid #8A8A8A;
-}
-#play, #next, #prev, .heart{
-    background-color: #c6426e;
 }
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 1px 1px 1px #828282;
@@ -154,7 +157,7 @@ input[type=range]::-moz-range-track {
   width: 100%;
   height: 16px;
   cursor: pointer;
-  tra: 0.2s;
+  animate: 0.2s;
   box-shadow: 0px 0px 0px #000000;
   background: #B6B6B6;
   border-radius: 25px;
@@ -209,15 +212,20 @@ input[type=range]:focus::-ms-fill-upper {
 .controls{
 	display: flex;
 	justify-content: space-between;
-	margin: 20px;
-	padding: 10px;
-    background: rgba( 255, 255, 255, 0.25 );
+	margin: 0 20px;
+	padding: 40px 0px;
+    background:  #185fb5;
+  
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
+backdrop-filter: blur( 1px );
+-webkit-backdrop-filter: blur( 1px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-background-color: #c6426e;
+    
+}
+.next,.play,.heart,.prev{
+    background: #185fb5;
+    
 }
 .hidden{
 	display: none;
